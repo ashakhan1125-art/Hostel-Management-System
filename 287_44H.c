@@ -5,7 +5,7 @@
 #define FILE_NAME "students.txt"
 #define TEMP "temp.txt"
 
-// 9. Pay Fees
+/*9. Pay Fees*/
 void payFees() {
     FILE *fp = fopen(FILE_NAME, "r");
     FILE *temp = fopen(TEMP, "w");
@@ -37,7 +37,7 @@ void payFees() {
 
     if(found) printf("Fees Updated.\n");
 }
-// 10. Show Defaulters
+/*10. Show Defaulters*/
 void showDefaulters() {
     FILE *fp = fopen(FILE_NAME, "r");
     char line[200];
@@ -55,7 +55,7 @@ void showDefaulters() {
 
     fclose(fp);
 }
-// 11. Change Password
+/*11. Change Password*/
 void changePassword() {
     char newPass[20];
 
